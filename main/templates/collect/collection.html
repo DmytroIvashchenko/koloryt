@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'deps/css/bootstrap/bootstrap.min.css' %}">
+    <!-- Стиль footer-a для главной страницы -->
+    <!-- Favicons for different platforms -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'deps/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'deps/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'deps/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'deps/favicon/site.webmanifest' %}">
+    <title>Home</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-white" data-bs-theme="white">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{% static 'deps/favicon/favicon-koloryt.png' %}">
+                Koloryt
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/collect">Колекції</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacts">Контакти</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-3" role="search">
+                    <button class="btn btn-outline-success" type="submit">&#128269;</button>
+                </form>
+                <a class="nav-link" href="carts/cart.html">
+                    <img src="{% static 'deps/favicon/cart_icon.png' %}" alt="Cart Icon">
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container mt-4">
+    <h1 class="mb-5">Колекції</h1>
+    <p>До вашої уваги представлені всі розроблені колекції</p>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <a class="navbar-brand" href="/collect/1">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a class="navbar-brand" href="/collect/2">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a class="navbar-brand" href="/collect/3">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row gx-4">
+        <div class="col-md-4">
+            <a class="navbar-brand" href="/collect/4">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class="navbar-brand" href="/collect/5">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class="navbar-brand" href="/collect/6">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row gx-4">
+        <div class="col-md-4">
+            <a class="navbar-brand" href="/collect/7">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class="navbar-brand" href="/collect/8">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a class="navbar-brand" href="/collect/9">
+                <img src="{% static 'deps/images/collection.png' %}">
+            </a>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <!-- Перший стовпчик -->
+            <div class="col-md-4 mb-4">
+                <h5>Зв'язатися з нами</h5>
+                <ul class="list-unstyled">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacts">Контакти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://instagram.com/">Інстаграм</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://facebook.com/">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Другий стовпчик -->
+            <div class="col-md-4 mb-4">
+                <h5>Інфо</h5>
+                <ul class="list-unstyled">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/delivery"> Оплата і доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/return"> Повернення & Відшкодування</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Третій стовпчик -->
+            <div class="col-md-4 mb-4">
+                <h5>2024 Koloryt</h5>
+                <ul class="list-unstyled">
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Оплата: Visa</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
